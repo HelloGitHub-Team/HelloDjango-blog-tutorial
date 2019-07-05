@@ -31,7 +31,7 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 
 1. [开始进入 django 开发之旅](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/59/)
 2. ["空空如也"的博客应用](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/60/)
-
+3. [创建 Django 博客的数据库模型](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/61/)
 
 ## 公众号
 <p align="center">
