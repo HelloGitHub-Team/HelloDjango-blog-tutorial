@@ -34,6 +34,7 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 3. [创建 Django 博客的数据库模型](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/61/)
 4. [Django 迁移、操作数据库](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/62/)
 5. [Django 的接客之道](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/63/)
+6. [博客从“裸奔”到“有皮肤”](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/64/)
 
 ## 公众号
 <p align="center">
