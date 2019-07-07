@@ -35,6 +35,7 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 4. [Django 迁移、操作数据库](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/62/)
 5. [Django 的接客之道](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/63/)
 6. [博客从“裸奔”到“有皮肤”](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/64/)
+7. [创作后台开启，请开始你的表演](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/65/)
 
 ## 公众号
 <p align="center">
