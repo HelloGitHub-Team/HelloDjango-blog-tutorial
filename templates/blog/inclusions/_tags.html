@@ -3,7 +3,7 @@
   <ul>
     {% for tag in tag_list %}
       <li>
-        <a href="#">{{ tag.name }}</a>
+        <a href="{% url 'blog:tag' tag.pk %}">{{ tag.name }}</a>
       </li>
     {% empty %}
       暂无标签！
