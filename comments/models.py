@@ -13,6 +13,7 @@ class Comment(models.Model):
     class Meta:
         verbose_name = '评论'
         verbose_name_plural = verbose_name
+        ordering = ['-created_time']
 
     def __str__(self):
         return '{}: {}'.format(self.name, self.text[:20])

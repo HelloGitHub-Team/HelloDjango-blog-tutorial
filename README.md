@@ -25,7 +25,71 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 - 首发 HelloGitHub 微信公众号，博客同步更新：[HelloDjango - Django博客教程（第二版）](https://zmrenwu.com/courses/hellodjango-blog-tutorial/)
 - 项目前端模板：[Blog templates](https://github.com/zmrenwu/django-blog-tutorial-templates)
 
-## 目录索引
+## 本地运行
+
+### Pipenv
+
+1. **克隆项目到本地**
+
+   ```
+git clone https://github.com/HelloGitHub-Team/HelloDjango-blog-tutorial.git
+   ```
+   
+2. **安装 Pipenv（已安装跳过）**
+
+   ```
+pip install pipenv
+   ```
+   
+3. **安装项目依赖**
+
+   ```
+   cd HelloDjango-blog-tutorial
+   pipenv install --dev
+   ```
+
+   > 关于如何使用 Pipenv，参阅：[开始进入 django 开发之旅](http://zmrenwu.com/post/3/) 的 Pipenv 创建和管理虚拟环境部分。
+
+4. **迁移数据库**
+
+   在项目根目录运行如下命令迁移数据库：
+
+   ```
+   pipenv run python manage.py migrate
+   ```
+
+5. **创建后台管理员账户**
+
+   在项目根目录运行如下命令创建后台管理员账户
+
+   ```
+   pipenv run python manage.py createsuperuser
+   ```
+
+   具体请参阅 [创作后台开启，请开始你的表演](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/65/)。
+
+6. **运行开发服务器**
+
+   在项目根目录运行如下命令开启开发服务器：
+
+   ```
+   pipenv run python manage.py runserver
+   ```
+
+   在浏览器访问：http://127.0.0.1:8000
+
+7. **进入后台发布文章**
+
+   在浏览器访问：http://127.0.0.1:8000/admin
+
+   使用第 5 步创建的后台管理员账户登录后台。
+
+
+### Docker
+
+即将奉上！敬请期待~
+
+## 教程目录索引
 
 **基础**
 
@@ -43,6 +107,7 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 12. [页面侧边栏：使用自定义模板标签](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/70/)
 13. [分类、归档和标签页](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/71/)
 14. [交流的桥梁：评论功能](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/72/)
+15. [优化博客功能细节，提升使用体验](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/73/)
 
 ## 公众号
 <p align="center">
