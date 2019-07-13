@@ -34,7 +34,7 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 3. [创建 Django 博客的数据库模型](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/61/)
 4. [Django 迁移、操作数据库](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/62/)
 5. [Django 的接客之道](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/63/)
-6. [博客从“裸奔”到“有皮肤”](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/64/)
+6. [博客从“裸奔”到“有皮肤”](https://www.zmrenwu.com/courseqs/hellodjango-blog-tutorial/materials/64/)
 7. [创作后台开启，请开始你的表演](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/65/)
 8. [开发博客文章详情页](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/66/)
 9. [让博客支持 Markdown 语法和代码高亮](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/67/)
@@ -42,6 +42,7 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 11. [自动生成文章摘要](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/69/)
 12. [页面侧边栏：使用自定义模板标签](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/70/)
 13. [分类、归档和标签页](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/71/)
+14. [交流的桥梁：评论功能](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/72/)
 
 ## 公众号
 <p align="center">
