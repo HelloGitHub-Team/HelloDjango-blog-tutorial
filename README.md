@@ -107,6 +107,7 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 13. [分类、归档和标签页](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/71/)
 14. [交流的桥梁：评论功能](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/72/)
 15. [优化博客功能细节，提升使用体验](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/73/)
+16. [Nginx+Gunicorn+Supervisor 部署 Django 博客应用](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/74/)
 
 ## 公众号
 <p align="center">
