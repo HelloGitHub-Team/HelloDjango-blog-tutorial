@@ -21,15 +21,17 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 
 ## 资源列表
 
-- [在线演示](https://django-blog-tutorial-v2-demo.zmrenwu.com/)
-- 首发 HelloGitHub 微信公众号，博客同步更新：[HelloDjango - Django博客教程（第二版）](https://zmrenwu.com/courses/django-blog-tutorial-v2/)
+- [在线演示](https://hellodjango-blog-tutorial-demo.zmrenwu.com/)
+- 首发 HelloGitHub 微信公众号，博客同步更新：[HelloDjango - Django博客教程（第二版）](https://zmrenwu.com/courses/HelloDjango-blog-tutorial/)
 - 项目前端模板：[Blog templates](https://github.com/zmrenwu/django-blog-tutorial-templates)
 
 ## 目录索引
 
 **基础**
 
-[1. 开始进入 django 开发之旅](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/59/)
+1. [开始进入 django 开发之旅](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/59/)
+2. ["空空如也"的博客应用](https://www.zmrenwu.com/courses/HelloDjango-blog-tutorial/materials/60/)
+
 
 ## 公众号
 <p align="center">
