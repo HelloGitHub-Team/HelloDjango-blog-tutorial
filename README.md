@@ -143,6 +143,7 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 20. [开发博客文章阅读量统计功能](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/78/)
 21. [Django 官方推荐的姿势：类视图](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/79/)
 22. [在脚本中使用 ORM：Faker 批量生成测试数据](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/80/)
+23. [通过 Django Pagination 实现简单分页](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/81/)
 
 ## 公众号
 <p align="center">
