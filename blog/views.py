@@ -1,4 +1,6 @@
-from django.shortcuts import get_object_or_404
+from django.contrib import messages
+from django.db.models import Q
+from django.shortcuts import get_object_or_404, redirect, render
 from django.views.generic import DetailView, ListView
 
 from pure_pagination.mixins import PaginationMixin
@@ -56,3 +58,15 @@ class PostDetailView(DetailView):
 
         # 视图必须返回一个 HttpResponse 对象
         return response
+
+
+def search(request):
+    q = request.GET.get("q")
+
+    if not q:
+        error_msg = "请输入搜索关键词"
+        messages.add_message(request, messages.ERROR, error_msg, extra_tags="danger")
+        return redirect("blog:index")
+
+    post_list = Post.objects.filter(Q(title__icontains=q) | Q(body__icontains=q))
+    return render(request, "blog/index.html", {"post_list": post_list})
