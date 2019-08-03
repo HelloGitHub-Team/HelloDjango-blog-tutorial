@@ -1,17 +1,19 @@
 [[source]]
 name = "pypi"
-url = "https://pypi.douban.com/simple"
+url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
 fabric = "*"
 
 [packages]
-django = "*"
+django = "~=2.2"
 markdown = "*"
 gunicorn = "*"
 faker = "*"
 django-pure-pagination = "*"
+elasticsearch = ">=2,<3"
+django-haystack = "*"
 
 [requires]
 python_version = "3.6"
