@@ -150,6 +150,7 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 27. [Django 博客实现简单的全文搜索](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/85/)
 28. [Django Haystack 全文检索与关键词高亮](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/86/)
 29. [单元测试：测试 blog 应用](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/87/)
+30. [单元测试：测试评论应用](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/88/)
 
 ## 公众号
 <p align="center">
