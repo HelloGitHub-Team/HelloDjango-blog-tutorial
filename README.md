@@ -40,6 +40,7 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 9. [让博客支持 Markdown 语法和代码高亮](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/67/)
 10. [Markdown 文章自动生成目录，提升阅读体验](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/68/)
 11. [自动生成文章摘要](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/69/)
+12. [页面侧边栏：使用自定义模板标签](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/70/)
 
 ## 公众号
 <p align="center">
