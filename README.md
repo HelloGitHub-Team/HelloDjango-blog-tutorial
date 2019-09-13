@@ -32,13 +32,13 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 1. **克隆项目到本地**
 
    ```
-git clone https://github.com/HelloGitHub-Team/HelloDjango-blog-tutorial.git
+   git clone https://github.com/HelloGitHub-Team/HelloDjango-blog-tutorial.git
    ```
    
 2. **安装 Pipenv（已安装跳过）**
 
    ```
-pip install pipenv
+   pip install pipenv
    ```
    
 3. **安装项目依赖**
@@ -47,13 +47,12 @@ pip install pipenv
    cd HelloDjango-blog-tutorial
    pipenv install --dev
    ```
-
+   
    > 关于如何使用 Pipenv，参阅：[开始进入 django 开发之旅](http://zmrenwu.com/post/3/) 的 Pipenv 创建和管理虚拟环境部分。
 
 4. **迁移数据库**
 
    在项目根目录运行如下命令迁移数据库：
-
    ```
    pipenv run python manage.py migrate
    ```
@@ -61,7 +60,7 @@ pip install pipenv
 5. **创建后台管理员账户**
 
    在项目根目录运行如下命令创建后台管理员账户
-
+   
    ```
    pipenv run python manage.py createsuperuser
    ```
