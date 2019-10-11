@@ -108,6 +108,8 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 14. [交流的桥梁：评论功能](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/72/)
 15. [优化博客功能细节，提升使用体验](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/73/)
 16. [Nginx+Gunicorn+Supervisor 部署 Django 博客应用](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/74/)
+17. [使用 Fabric 自动化部署](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/75/)
+18. [使用 Certbot 向 Let's Encrypt 免费申请 HTTPS 证书](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/76/)
 
 ## 公众号
 <p align="center">
