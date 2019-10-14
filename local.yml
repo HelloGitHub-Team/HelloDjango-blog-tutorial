@@ -1,0 +1,19 @@
+version: '3'
+
+volumes:
+  database_local:
+
+services:
+  hellodjango_blog_tutorial_local:
+    build:
+      context: .
+      dockerfile: ./compose/local/Dockerfile
+    image: hellodjango_blog_tutorial_local
+    container_name: hellodjango_blog_tutorial_local
+    working_dir: /app
+    volumes:
+      - database_local:/app/database
+      - .:/app
+    ports:
+      - "8000:8000"
+    command: /start.sh

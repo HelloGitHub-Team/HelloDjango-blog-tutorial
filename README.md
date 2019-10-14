@@ -86,7 +86,36 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 
 ### Docker
 
-即将奉上！敬请期待~
+1. **安装 Docker 和 Docker Compose**
+
+2. **克隆项目到本地**
+
+   ```
+   git clone https://github.com/HelloGitHub-Team/HelloDjango-blog-tutorial.git
+   ```
+
+3. **构建镜像和启动容器**
+
+   ```
+   docker-compose -f local.yml build
+   docker-compose -f local.yml up
+   ```
+
+4. **创建后台管理员账户**
+
+   ```
+   docker exec -it hellodjango_blog_tutorial_local python manage.py createsuperuser
+   ```
+
+   其中 hellodjango_blog_tutorial_local 为项目预定义容器名
+
+5. 进入后台发布文章
+
+   在浏览器访问：http://127.0.0.1:8000/admin
+
+   使用第 3 步创建的后台管理员账户登录
+
+   具体请参阅 [创作后台开启，请开始你的表演](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/65/)。
 
 ## 教程目录索引
 
@@ -110,6 +139,7 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 16. [Nginx+Gunicorn+Supervisor 部署 Django 博客应用](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/74/)
 17. [使用 Fabric 自动化部署](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/75/)
 18. [使用 Certbot 向 Let's Encrypt 免费申请 HTTPS 证书](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/76/)
+19. [使用 Docker 让部署 Django 项目更加轻松](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/77/)
 
 ## 公众号
 <p align="center">

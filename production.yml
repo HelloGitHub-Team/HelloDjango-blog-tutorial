@@ -1,0 +1,34 @@
+version: '3'
+
+volumes:
+  static:
+  database:
+
+services:
+  hellodjango_blog_tutorial:
+    build:
+      context: .
+      dockerfile: compose/production/django/Dockerfile
+    image: hellodjango_blog_tutorial
+    container_name: hellodjango_blog_tutorial
+    working_dir: /app
+    volumes:
+      - database:/app/database
+      - static:/app/static
+    env_file:
+      - .envs/.production
+    ports:
+      - "8000:8000"
+    command: /start.sh
+
+  nginx:
+    build:
+      context: .
+      dockerfile: compose/production/nginx/Dockerfile
+    image: hellodjango_blog_tutorial_nginx
+    container_name: hellodjango_blog_tutorial_nginx
+    volumes:
+      - static:/apps/hellodjango_blog_tutorial/static
+    ports:
+      - "80:80"
+      - "443:443"
