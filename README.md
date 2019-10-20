@@ -140,6 +140,7 @@ tutorial 分支为项目的主分支，每一篇教程的代码都和历史提�
 17. [使用 Fabric 自动化部署](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/75/)
 18. [使用 Certbot 向 Let's Encrypt 免费申请 HTTPS 证书](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/76/)
 19. [使用 Docker 让部署 Django 项目更加轻松](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/77/)
+20. [开发博客文章阅读量统计功能](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/78/)
 
 ## 公众号
 <p align="center">
