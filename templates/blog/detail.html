@@ -2,41 +2,41 @@
 {% load comments_extras %}
 
 {% block main %}
-  <article class="post post-{{ post.pk }}">
-    <header class="entry-header">
-      <h1 class="entry-title">{{ post.title }}</h1>
-      <div class="entry-meta">
-        <span class="post-category"><a href="#">{{ post.category.name }}</a></span>
-        <span class="post-date"><a href="#"><time class="entry-date"
-                                                  datetime="{{ post.created_time }}">{{ post.created_time }}</time></a></span>
-        <span class="post-author"><a href="#">{{ post.author }}</a></span>
-        <span class="comments-link"><a href="#comment-area">{{ post.comment_set.count }} 评论</a></span>
-        <span class="views-count"><a href="#">{{ post.views }} 阅读</a></span>
-      </div>
-    </header>
-    <div class="entry-content clearfix">
-      {{ post.body_html|safe }}
-    </div>
-  </article>
-  <section class="comment-area" id="comment-area">
-    <hr>
-    <h3>发表评论</h3>
-    {% show_comment_form post %}
-    <div class="comment-list-panel">
-      {% show_comments post %}
-    </div>
-  </section>
+    <article class="post post-{{ post.pk }}">
+        <header class="entry-header">
+            <h1 class="entry-title">{{ post.title }}</h1>
+            <div class="entry-meta">
+                <span class="post-category"><a href="#">{{ post.category.name }}</a></span>
+                <span class="post-date"><a href="#"><time class="entry-date"
+                                                          datetime="{{ post.created_time }}">{{ post.created_time }}</time></a></span>
+                <span class="post-author"><a href="#">{{ post.author }}</a></span>
+                <span class="comments-link"><a href="#comment-area">{{ post.comment_set.count }} 评论</a></span>
+                <span class="views-count"><a href="#">{{ post.views }} 阅读</a></span>
+            </div>
+        </header>
+        <div class="entry-content clearfix">
+            {{ post.body|safe }}
+        </div>
+    </article>
+    <section class="comment-area" id="comment-area">
+        <hr>
+        <h3>发表评论</h3>
+        {% show_comment_form post %}
+        <div class="comment-list-panel">
+            {% show_comments post %}
+        </div>
+    </section>
 {% endblock main %}
 
 {% block toc %}
-  {% if post.toc %}
-    <div class="widget widget-content">
-      <h3 class="widget-title">文章目录</h3>
-      <div class="toc">
-        <ul>
-          {{ post.toc|safe }}
-        </ul>
-      </div>
-    </div>
-  {% endif %}
+    {% if post.toc %}
+        <div class="widget widget-content">
+            <h3 class="widget-title">文章目录</h3>
+            <div class="toc">
+                <ul>
+                    {{ post.toc|safe }}
+                </ul>
+            </div>
+        </div>
+    {% endif %}
 {% endblock toc %}

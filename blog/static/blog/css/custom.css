@@ -885,21 +885,34 @@ img {
 /**
  * 13.0 - Pagination
  */
-.pagination-simple {
-    padding-left: 30px;
-    font-size: 16px;
+.pagination {margin-top: 25px; text-align: center;}
+.pagination a {
+  display: inline-block;
+  line-height: 38px;
+  padding: 0 15px;
+  margin-right: 4px;
+  text-align: center;
+  background-color: #fff;
+  user-select: none;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #d7dde4;
+  border-radius: 4px;
+  transition: all .2s ease-in-out;
 }
-
-.pagination ul {
-    list-style: none;
+.pagination a:hover {
+  color: #4cb4e7;
+  border: 1px solid #4cb4e7;
 }
-
-.pagination ul li {
-    display: inline-block;
-    font-size: 16px;
-    margin-right: 5px;
+.pagination .current-page {color: white; background-color: #4cb4e7;}
+.pagination .current-page:hover {
+  color: white;
+  border: 1px solid #4cb4e7;
 }
-
-.current a {
-    color: red;
+.pagination span {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 38px;
+  padding: 0 8px;
+  margin-right: 4px;
 }

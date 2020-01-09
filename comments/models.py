@@ -1,6 +1,7 @@
 from django.db import models
-from django.utils import timezone
 
+# Create your models here.
+from django.utils import timezone
 
 class Comment(models.Model):
     name = models.CharField('名字', max_length=50)

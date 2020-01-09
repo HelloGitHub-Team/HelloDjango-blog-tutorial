@@ -1,34 +1,59 @@
 {% extends 'base.html' %}
 
 {% block main %}
-  {% for post in post_list %}
-    <article class="post post-{{ post.pk }}">
-      <header class="entry-header">
-        <h1 class="entry-title">
-          <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-        </h1>
-        <div class="entry-meta">
-          <span class="post-category"><a href="#">{{ post.category.name }}</a></span>
-          <span class="post-date"><a href="#"><time class="entry-date"
-                                                    datetime="{{ post.created_time }}">{{ post.created_time }}</time></a></span>
-          <span class="post-author"><a href="#">{{ post.author }}</a></span>
-          <span class="comments-link"><a href="{{ post.get_absolute_url }}#comment-area">{{ post.comment_set.count }} 评论</a></span>
-          <span class="views-count"><a href="{{ post.get_absolute_url }}">{{ post.views }} 阅读</a></span>
+
+    {% for post in post_list %}
+        <article class="post post-{{ post.pk }}">
+            <header class="entry-header">
+                <h1 class="entry-title">
+                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                </h1>
+                <div class="entry-meta">
+                    <span class="post-category"><a href="{{ post.get_absolute_url }}">{{ post.category.name }}</a></span>
+                    <span class="post-date"><a href="{{ post.get_absolute_url }}"><time class="entry-date"
+                                                                              datetime="{{ post.created_time }}">{{ post.created_time }}</time></a></span>
+                    <span class="post-author"><a href="{{ post.get_absolute_url }}">{{ post.author }}</a></span>
+                    <span class="comments-link"><a href="{{ post.get_absolute_url }}#comment-area">{{ post.comment_set.count }} 评论</a></span>
+                    <span class="views-count"><a href="{{ post.get_absolute_url }}">{{ post.views }} 阅读</a></span>
+                </div>
+            </header>
+            <div class="entry-content clearfix">
+            <p>{{ post.excerpt }}...</p>
+            <div class="read-more cl-effect-14">
+                <a href="{{ post.get_absolute_url }}" class="more-link">继续阅读 <span class="meta-nav">→</span></a>
+            </div>
         </div>
-      </header>
-      <div class="entry-content clearfix">
-        <p>{{ post.excerpt }}...</p>
-        <div class="read-more cl-effect-14">
-          <a href="{{ post.get_absolute_url }}" class="more-link">继续阅读 <span class="meta-nav">→</span></a>
-        </div>
-      </div>
     </article>
-  {% empty %}
-    <div class="no-post">暂时还没有发布的文章！</div>
-  {% endfor %}
-
-  {% if is_paginated %}
-    {{ page_obj.render }}
-  {% endif %}
-
+    {% empty %}
+        <div class="no-post">暂时还没有发布的文章！</div>
+    {% endfor %}
+    {% if is_paginated %}
+    <div class="text-center">
+    <div class="pagination">
+      {% if first %}
+        <a href="?page=1">1</a>
+      {% endif %}
+      {% if left %}
+        {% if left_has_more %}
+            <span>...</span>
+        {% endif %}
+        {% for i in left %}
+            <a href="?page={{ i }}">{{ i }}</a>
+        {% endfor %}
+      {% endif %}
+        <a class="current-page" href="?page={{ page_obj.number }}" >{{ page_obj.number }}</a>
+      {% if right %}
+        {% for i in right %}
+            <a href="?page={{ i }}">{{ i }}</a>
+        {% endfor %}
+        {% if right_has_more %}
+            <span>...</span>
+        {% endif %}
+      {% endif %}
+      {% if last %}
+        <a href="?page={{ paginator.num_pages }}">{{ paginator.num_pages }}</a>
+      {% endif %}
+    </div>
+    </div>
+    {% endif %}
 {% endblock main %}
