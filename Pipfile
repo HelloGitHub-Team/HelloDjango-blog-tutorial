@@ -16,4 +16,4 @@ elasticsearch = ">=2,<3"
 django-haystack = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3"
