@@ -1,0 +1,15 @@
+[run]
+branch = True
+source = .
+omit =
+   _credentials.py
+   manage.py
+   blogproject/settings/*
+   fabfile.py
+   scripts/fake.py
+   */migrations/*
+   blogproject\wsgi.py
+
+[report]
+show_missing = True
+skip_covered = True

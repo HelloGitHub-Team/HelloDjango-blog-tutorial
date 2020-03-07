@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 fabric = "*"
+coverage = "*"
 
 [packages]
 django = "~=2.2"
