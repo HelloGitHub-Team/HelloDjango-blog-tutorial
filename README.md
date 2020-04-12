@@ -13,6 +13,7 @@
   <a href="https://github.com/HelloGitHub-Team/HelloDjango-blog-tutorial/stargazers"><img src="https://img.shields.io/github/stars/HelloGitHub-Team/HelloDjango-blog-tutorial.svg?style=popout-square" alt="GitHub stars"></a>
   <a href="https://weibo.com/hellogithub"><img src="https://img.shields.io/badge/%E6%96%B0%E6%B5%AA-Weibo-red.svg?style=popout-square" alt="Sina Weibo"></a>
 </p>
+
 **特别说明**：本项目不仅仅是教程用的演示项目！我们的目标是开发一个功能完善、测试充分、可用于生产环境的开源博客系统。和其他开源博客系统不同点在于，我们以教程的形式详细记录项目从 0 到 1 的开发过程。
 
 ## 分支说明
@@ -289,6 +290,9 @@ $ git clone https://github.com/HelloGitHub-Team/HelloDjango-blog-tutorial.git
 29. [单元测试：测试 blog 应用](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/87/)
 30. [单元测试：测试评论应用](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/88/)
 31. [Coverage.py 统计测试覆盖率](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/materials/89/)
+
+## 继续学习
+有了以上的 django 基础，让我继续学习 [django REST framework 教程](https://www.zmrenwu.com/courses/django-rest-framework-tutorial/)
 
 ## 公众号
 <p align="center">
